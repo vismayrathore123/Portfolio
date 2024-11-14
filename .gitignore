@@ -1,0 +1,12 @@
+# Ignore Visual Studio files
+.vs/
+.vsconfig
+.idea/
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+# Ignore appsettings files globally in the repository
+**/appsettings.json
+**/appsettings.Development.json

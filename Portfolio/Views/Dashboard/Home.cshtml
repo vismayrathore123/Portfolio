@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vismay Rathore - .NET Full Stack Developer</title>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <style>
+
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #000000;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+
+        .text-center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            z-index: 1;
+        }
+
+        .d-flex {
+            display: flex;
+            justify-content: center;
+        }
+
+        .bi {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Particle container -->
+    <div id="particles-js"></div>
+
+    <!-- Main content -->
+    <div class="text-center">
+        <h1>Vismay Rathore</h1>
+        <h2>.Net Full Stack Developer</h2>
+        <h3>Ready to elevate your business to the next level? Look no further! Unlock your full potential with a skilled web developer who delivers stunning designs, flawless functionality, and customized solutions that will elevate your online presence and drive success.</h3>
+
+        <ul class="d-flex justify-content-center">
+            <li style="list-style: none; margin-right: 15px;">
+                <a href="https://www.linkedin.com/in/vismayrathore1/" target="_blank">
+                    <i class="bi bi-linkedin" style="font-size: 30px;"></i>
+                </a>
+            </li>
+            <li style="list-style: none;">
+                <a href="https://github.com/vismayrathore123" target="_blank">
+                    <i class="bi bi-github" style="font-size: 30px;"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+    <script>
+        particlesJS('particles-js', {
+            "particles": {
+                "number": {
+                    "value": 100,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#00BFFF"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                    "image": {
+                        "src": "img/github.svg",
+                        "width": 100,
+                        "height": 100
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 5,
+                        "size_min": 1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": false
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "bottom",
+                    "random": false,
+                    "straight": true,
+                    "out_mode": "out",
+                    "attract": {
+                        "enable": false
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": false
+                    },
+                    "onclick": {
+                        "enable": false
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true,
+            "config_demo": {
+                "background_color": "#000000",
+                "background_image": "",
+                "background_position": "50% 50%",
+                "background_repeat": "no-repeat",
+                "background_size": "cover"
+            }
+        });
+    </script>
+</body>
+</html>
