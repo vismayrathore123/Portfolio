@@ -1,0 +1,201 @@
+﻿@{
+    ViewData["Title"] = "Resume";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h3 {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        /* Container */
+        .container {
+            width: 85%;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+
+        /* Section Header Styling */
+        .header-col h1 {
+            font-size: 24px;
+            text-transform: uppercase;
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        .header-col span {
+            color: #3498db;
+        }
+
+        /* Row Styling */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        /* Column Styling */
+        .three.columns {
+            flex: 0 0 25%;
+            max-width: 25%;
+            padding: 10px;
+        }
+
+        .nine.columns {
+            flex: 0 0 75%;
+            max-width: 75%;
+            padding: 10px;
+        }
+
+        .twelve.columns {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        /* Item Styling */
+        .item {
+            margin-bottom: 20px;
+        }
+
+        .info {
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+
+        .date {
+            color: #3498db;
+        }
+
+            .date span {
+                color: #2c3e50;
+            }
+
+        /* Work Experience and Education */
+        .item h3 {
+            font-size: 22px;
+            color: #2c3e50;
+        }
+
+        /* Skills Section */
+        .skill p {
+            font-size: 16px;
+            color: #34495e;
+        }
+
+        .info {
+            font-weight: bold;
+        }
+
+        /* Add hover effects */
+        .row.item:hover {
+            background-color: #ecf0f1;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: 0.3s ease;
+        }
+
+        .row.item h3:hover {
+            color: #3498db;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <!-- Education Section -->
+        <div class="row education">
+            <div class="three columns header-col">
+                <h1><span>Education</span></h1>
+            </div>
+            <div class="nine columns main-col">
+                <!-- IPS Academy -->
+                <div class="row item">
+                    <div class="twelve columns">
+                        <h3>IPS Academy, Indore</h3>
+                        <p class="info">
+                            Master Of Computer Application (MCA)
+                            <span>•</span>
+                            <em class="date">2023</em>
+                        </p>
+                        <p>79.80%</p>
+                    </div>
+                </div>
+                <!-- Dayanand Saraswati College -->
+                <div class="row item">
+                    <div class="twelve columns">
+                        <h3>Dayanand Saraswati College, Shajapur</h3>
+                        <p class="info">
+                            Bachelor Of Computer Application (BCA)
+                            <span>•</span>
+                            <em class="date">2020</em>
+                        </p>
+                        <p>69.87%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Work Experience Section -->
+        <div class="row work">
+            <div class="three columns header-col">
+                <h1><span>Work</span></h1>
+            </div>
+            <div class="nine columns main-col">
+                <!-- Oasis Infobytes -->
+                <div class="row item">
+                    <div class="twelve columns">
+                        <h3>Oasis Infobytes</h3>
+                        <p class="info">
+                            Internship
+                            <span>Web Developer</span>
+                            <em class="date">March-April 2023</em>
+                        </p>
+                    </div>
+                </div>
+                <!-- Evision Software Solutions -->
+                <div class="row item">
+                    <div class="twelve columns">
+                        <h3>Evision Software Solutions PVT LTD</h3>
+                        <p class="info">
+                            .NET Full Stack Developer
+                            <span>•</span>
+                            <em class="date">October 2023 - Present</em>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="row skill">
+            <div class="three columns header-col">
+                <h1><span>Skills</span></h1>
+            </div>
+            <div class="nine columns main-col">
+                <div>
+                    <p><strong class="info">Languages:</strong> C#, Java, HTML5, CSS3, SQL</p>
+                    <p><strong class="info">Libraries/Frameworks:</strong> .NET Core, ASP.NET MVC, Rest APIs, Entity Framework Core</p>
+                    <p><strong class="info">Databases:</strong>SQL Server,MongoDB,</p>
+                    <p><strong class="info">Platforms/Tools:</strong> Azure, GitHub Pages, Git, Postman, AWS S3</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
