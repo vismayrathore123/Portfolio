@@ -3,7 +3,7 @@
 
 namespace Portfolio.Controllers
 {
-    public class DashboardController : Controller
+    public class DashboardController : Controller          
     {
         private readonly BlobStorageService _blobStorageService;
 
